@@ -1,11 +1,7 @@
 # NYC COVID-19 and the Housing Market
 
-### Group G Members
-* Kum Hyun Lee (khl2139@columbia.edu)
-* Mengying Xu (mx2238@columbia.edu)
-* Yi Hyun Kim (yk2906@columbia.edu)
-
 Click [here](https://2hyunie.github.io/qmss-dv-group-g/index.html) to view our website.
+The codes and datasets used for the content of the website can be found [here](https://github.com/QMSS-G5063-2022/Group_G_Covid_Housing_Prices).
 
 This project aims to explore how the Covid-19 pandemic has impacted the housing market by focusing on comparing the sales price across NYC. The project will track how the waves of Covid-19 cases affected the price fluctuations by conducting data analysis and illustrating the results.
 
