@@ -45,6 +45,15 @@ li {
     margin: 0 auto;
 }
 
+.row {
+  display: flex;
+}
+
+.column {
+  flex: 25%;
+  padding: 0.5px;
+}
+
 .light-theme {
     --bg: var(--green);
     --fontColor: var(--black);
