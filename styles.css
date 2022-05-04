@@ -1,0 +1,73 @@
+:root {
+    --green: #fefff0;
+    --white: #ffffff;
+    --black: #1c1c1c;
+  }
+
+* {
+    color: var(--fontColor);
+    font-family: "futura";
+  }
+
+h1 {
+  font-size: 5em;
+}
+
+h2 {
+  font-size: 1.8em;
+}
+
+p {
+  font-size: 0.95em;
+}
+
+body {
+      background: var(--bg);
+      font-family: futura;
+  }
+
+ol {
+    font-family: futura;
+}
+
+li {
+    list-style: circle;
+  }
+  
+.list {
+    list-style: square;
+    font-family: "Courier New";
+    font-size: 0.95em;
+  }
+
+#page-wrap {
+    width: 800px;
+    margin: 0 auto;
+}
+
+.light-theme {
+    --bg: var(--green);
+    --fontColor: var(--black);
+    --btnBg: var(--black);
+    --btnFontColor: var(--white);
+  }
+  
+.dark-theme {
+    --bg: var(--black);
+    --fontColor: var(--green);
+    --btnBg: var(--white);
+    --btnFontColor: var(--black);
+  }
+
+.btn {
+    top: 20px;
+    left: 250px;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: none;
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+  }
+
+.btn:focus { outline-style: none; }
