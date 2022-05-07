@@ -11,24 +11,41 @@
 
 h1 {
   font-size: 5em;
+  text-shadow: 1px 1px 1px #919191,
+  1px 2px 1px #919191,
+  1px 3px 1px #919191,
+  1px 4px 1px #919191,
+  1px 5px 1px #919191,
+  1px 10px 6px #484848;
 }
 
 h2 {
+  font-size: 4.2em;
+  text-shadow: 1px 1px 1px #919191,
+  1px 2px 1px #919191,
+  1px 3px 1px #919191;
+}
+
+h3 {
   font-size: 1.8em;
+}
+
+h4 {
+  font-size: 1.3em;
 }
 
 p {
   font-size: 0.95em;
 }
 
+.noHover{
+  pointer-events: none;
+}
+
 body {
       background: var(--bg);
       font-family: futura;
   }
-
-ol {
-    font-family: futura;
-}
 
 li {
     list-style: circle;
@@ -45,6 +62,29 @@ li {
     margin: 0 auto;
 }
 
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.container:hover {
+	cursor: pointer;
+}
+
+.container img {
+	filter: grayscale();
+	border-radius: 50%;
+	border: 6px solid whitesmoke;
+	box-shadow: 2px 2px 10px 2px rgba(0, 0, 0, 0.5);
+	margin-bottom: 1rem;
+	transition: filter 0.4s ease-in-out;
+}
+
+.container:hover img {
+	filter: none;
+}
+
 .row {
   display: flex;
 }
@@ -52,6 +92,55 @@ li {
 .column {
   flex: 25%;
   padding: 0.5px;
+}
+
+.button {
+  overflow: hidden;
+  position: relative;
+  display: inline-block;
+  text-transform: uppercase;
+}
+
+.button::before,
+.button::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+.button::before {
+  background-color: rgb(148, 160, 104);
+  height: 2px;
+  bottom: 0;
+  transform-origin: 100% 50%;
+  transform: scaleX(0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+.button::after {
+  content: attr(data-replace);
+  height: 100%;
+  top: 0;
+  transform-origin: 100% 50%;
+  transform: translate3d(200%, 0, 0);
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+  color: rgb(148, 160, 104);
+}
+
+.button:hover::before {
+  transform-origin: 0% 50%;
+  transform: scaleX(1);
+}
+.button:hover::after {
+  transform: translate3d(0, 0, 0);
+}
+
+.button span {
+  display: inline-block;
+  transition: transform .3s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+.button:hover span {
+  transform: translate3d(-200%, 0, 0);
 }
 
 .light-theme {
