@@ -8,55 +8,66 @@
     <link rel="stylesheet" href="styles.css">
   </head><br></br>
   <body class = "dark-theme">
-    <div id="page-wrap">
+    <div id="page-wrap" class="disable-select">
       <h2 style="text-align: center"><a href="index.html" style="text-decoration:none">NYC COVID-19 and the Housing Market</a></h2>
     <ol>
       <li class="list"><a href="index.html" class="button" id="style-2" data-replace="Introduction"><span>Introduction</span></a></li>
-      <li class="list"><a href="part1.html" class="button" id="style-2" data-replace="Part 1: Trends in Covid-19 and Sales Price"><span>Part 1: Trends in Covid-19 and Sales Price</span></a></li>
+      <li class="list"><a href="part1.html" class="button" id="style-2" data-replace="Part 1: Trends in COVID-19 and Sales Price"><span>Part 1: Trends in Covid-19 and Sales Price</span></a></li>
       <li class="list"><a href="part3.html" class="button" id="style-2" data-replace="Part 3: Text Analysis"><span>Part 3: Text Analysis</span></a></li>
       <li class="list"><a href="part4.html" class="button" id="style-2" data-replace="Appendix"><span>Appendix</span></a></li>
     </ol><br></br>
+    <h3 style="text-align: center">Part 2: Geographical Variations</h3>
+    <p style="text-align:center"> How has COVID-19 affected the NYC housing market  </p>    
+    <h4 style="text-align: center"> within NYC Boroughs?</h4>
+
+
+    <br></br>
 
     <center><img src="Visualizations/hudson.jpeg" width="85%" class="center"></center>
     <p style="text-align: right"> Hudson Yards, Manhattan, NYC </p>
     <center><img src="Visualizations/breeze.jpeg" width="50%" class="center"></center>
     <p style="text-align: right"> Breezy Point, Brooklyn, NYC </p>
-
-
     <br></br>
     <br></br>
 
-    <h3 style="text-align: center">Part 2: Geographical Variations</h3><br></br>
-    <h4 style="text-align: center">How has COVID-19 affected the NYC housing market?</h4>
+    <p style="text-align: center"> Hypothesis testing PART 1's findings: </p>
     <ul>
         <li class="list">Hypothesis 1: The association between COVID-19 and housing prices is negative.</li>
         <li class="list">Hypothesis 1: The association between COVID-19 and housing prices is positive.</li>
     </ul>
-    <p style="text-align: center">Hypothesis 1 suggests that an increase in COVID-19 case rates is depreciating factor to property values. Hypothesis 2 suggests the opposite, namely that COVID-19 somehow raises the price of properties.  
-      We will look at rolling sales data that provides information on average selling prices in NYC zipcode areas and observe 
-      house prices in areas with the highest and the lowest COVID-19 case rates.</p>
+    <p style="text-align: center">Hypothesis 1 suggests that an increase in COVID-19 case rates is depreciating factor
+       to property values. Hypothesis 2 suggests the opposite, namely that COVID-19 somehow raises the price of properties.
+       This was the trend we gathered from the simultaneous peak in average housing prices and covid case rates in Dec 2021 from PART 1.
+      In what follows, We will look at Zipcoded Rolling sales data and observe how house prices correspond in areas with the highest and the lowest COVID-19 case rates.</p>
     <br></br>
     <br></br>
     <h4 style="text-align: center"> What are the main patterns?</h4>
 
     <p style="text-align: center"> These are the neighbourhoods that showed positive / negative association with fluctuations in COVID-19 case rates,
     from 2020 Q4 to 2022 Q1: </p>
-
-
     <center><img src="Visualizations/table2.png" width="80%" height="auto" class="center"></center><br></br>
     <br></br>
     <br></br>
+    <br></br>
+    <h4 style="text-align: center"> Guide: </h4>
+    <p style="text-align: center"> COVID-19 </p>
+    <p style="text-align: center"> This is a map of NYC with polygons outlining zipcoded neighbourhoods, 
+      showing the severity of COVID-19 from blue (low) to red(high). </p>
+    <center><img src="Visualizations/Covid_Q42020.png" width="70%" height="auto" class="center"></center><br></br>
 
-    <img src="Visualizations/covid_all6.png" width="750" height="auto" class="center"><br></br>
     <br></br>
-    <br></br>
-    <img src="Visualizations/housing_all6_tan.png" width="750" height="auto" class="center"><br></br>
-    <br></br>
-    <h4 style="text-align: center"> Comparisons side-by-side</h4>
+    <p style="text-align: center"> HOUSING </p>
+    <p style="text-align: center"> This is a map of NYC with logged average housing price mapped each zipcode, 
+      with Red representing high and Dark blue indicating low value.  </p>
+    <center><img src="Visualizations/tan1.png" width="80%" height="auto" class="center"></center><br></br>
+
+<br></br>
+<br></br>
+    <h4 style="text-align: center"> Side-by-side Comparison</h4>
     <p style="text-align: center"> 2020 Q4 </p>
-    <p style="text-align: center"> COVID-19 case rates were the highest in Breezy point -dubbed as "the summer oasis on the western tip of 
-      Rockaway Peninsula"- foreshadowing the second wave of covid, marking the beginning of a new spread.
-      The housing prices in Breezy point were relatively low, while the prices in Greenwich village
+    <p style="text-align: center"> COVID-19 case rates were the highest in Breezy Point -dubbed as "the summer oasis on the western tip of 
+      Rockaway Peninsula"- foreshadowing the second wave of COVID-19, marking the beginning of a new spread.
+      The housing prices in Breezy Point were relatively low, while the prices in Greenwich village
       -where COVID-19 rates were fairly low- were high. </p><br></br>
     <center><img src="Visualizations/Q42020_tan.png" width="75%" class="center"></center>
       <br></br>
@@ -68,7 +79,7 @@
         <br></br>
       <p style="text-align: center"> 2021 Q2 </p>
       <p style="text-align: center"> This pattern in support of hypoyhesis 1 became extremely clear in the second quarter:
-      1) COVID-19 was the most severe in Staten Island, where housing prices were the lowest.  2) House prices were also the highest in Lenox hill/ Upper
+      1) COVID-19 was the most severe in Staten Island, where housing prices were the lowest.  2) House prices were also the highest in Lenox Hill/ Upper
         East side, where COVID-19 case rates were the lowest.</p><br></br>
       <center><img src="Visualizations/Q22021_tan.png" width="75%" class="center"></center>
         <br></br>
@@ -89,14 +100,35 @@
       whilst 2) Tribeca contained very low COVID-19 and sold houses at high prices.</p><br></br>
       <center><img src="Visualizations/Q42021_tan.png" width="75%" class="center"></center>
       <br></br>
-      <h4 style="text-align: center"> Final remarks? </h4>
-      <p style="text-align: center"> In summary, housing prices in "Breezy point", "Greenwich village", "Lenox hill" and "Upper East Side" in 
-      Manhattan; "Mott Haven" in  Bronx; "Brighton Beach" in Brooklyn and Staten Island were the geographical regions
-    that showed the classic pattern of hitting low when COVID-19 cases were high and vice versa, which suggests that COVID-19 was general bad 
-    for the housing market in these regions; While "Hudson Yards" and "Hell's kitchen" in manhattan, 
-    and the entire Queens area tended to not follow this typical pattern and instead exhibited the opposite, suggesting that either COVID-19 had a positive 
-    effect on house prices or that the value of housing followed an entirely different momentum that was unaffected by COVID-19 case rates.</p><br></br>
+      <br></br>
+      <h4 style="text-align: center"> Did housing prices increase with COVID-19? </h4>
+      <p style="text-align: center"> How do the mapped correlations relate to PART 1?
+        <li class="list"><a href="part1.html" class="button" id="style-2" data-replace="Part 1: Trends in Covid-19 and Sales Price"><span>check PART 1 </span></a></li>
+        The the common peak (see line and bar plots in PART 1) left an impression that the rise and fall of housing prices and COVID-19 
+        overlapped in Q4 2021, suggesting a strong positive correlation between housing and COVID-19 in all areas of 
+        NYC. The maps we have seen so far break every borough down to the level of zipcodes, allowing us to re-examine said 
+        correlation with quarterly data. In actuality, the correlation remained evidently negative until the 2021 Q4 peak, and even in 2021 Q4,
+        the parallelled increase was only true in specific zipcoded areas and thus can't be deemed a general trend across boroughs. </p><br></br>
+
+        <h4 style="text-align: center"> Summary findings </h4>
+
+        <p style="text-align: center"> With the maps in PART 2, we were able to unpack what might have been an ecological fallacy from PART 1 and safely conclude that:
+        For "Breezy Point", "Greenwich village", "Lenox Hill" and "Upper East Side" in 
+      Manhattan; "Mott Haven" in  Bronx; "Brighton Beach" in Brooklyn and Staten Island, COVID-19 was "bad" for the housing market, from how the 
+      prices dropped when COVID-19 cases were high and vice versa; "Hudson Yards" and "Hell's Kitchen" in manhattan, 
+    and some areas in Queens tended to not follow this typical pattern and instead exhibited the opposite, suggesting a positive correlation.
+    This further indicates that the value of housing in Hudson yards,  Hell's Kitchen and a few areas in Queens either responded positively to COVID-19 case rates
+    or alternatively, that it followed an entirely different momentum other than COVID-19.</p><br></br>
     <center><img src="Visualizations/table3.png" width="50%" class="center"></center>
+
+    <br></br>
+    <br></br>
+
+    <center><img src="Visualizations/covid_all6.png" width="70%" height="auto" class="center"></center><br></br>
+    <br></br>
+    <br></br>
+    <center><img src="Visualizations/housing_all6_tan.png" width="70%" height="auto" class="center"></center><br></br>
+    
     <br></br>
     <p style="text-align: right"><a href="part3.html" class="button" id="style-2" data-replace="GO TO Part 3: Text Analysis"><span>GO TO Part 3: Text Analysis</span></a></p>
     <br></br>

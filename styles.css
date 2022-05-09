@@ -14,9 +14,7 @@ h1 {
   text-shadow: 1px 1px 1px #919191,
   1px 2px 1px #919191,
   1px 3px 1px #919191,
-  1px 4px 1px #919191,
-  1px 5px 1px #919191,
-  1px 10px 6px #484848;
+  1px 5px 3px #484848;
 }
 
 h2 {
@@ -92,6 +90,14 @@ li {
 .column {
   flex: 25%;
   padding: 0.5px;
+}
+
+.disable-select {
+  user-select: none; /* supported by Chrome and Opera */
+ -webkit-user-select: none; /* Safari */
+ -khtml-user-select: none; /* Konqueror HTML */
+ -moz-user-select: none; /* Firefox */
+ -ms-user-select: none; /* Internet Explorer/Edge */
 }
 
 .button {
