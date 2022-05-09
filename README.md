@@ -1,14 +1,16 @@
 # NYC COVID-19 and the Housing Market
 
 Click [here](https://2hyunie.github.io/qmss-dv-group-g/index.html) to view our website.
-The codes and datasets used for the content of the website can be found [here](https://github.com/QMSS-G5063-2022/Group_G_Covid_Housing_Prices).
+The codes and datasets used for the content of the website can be found [here](https://github.com/QMSS-G5063-2022/Group_G_Covid_Housing_Prices) and the codes used to build the website can be found on this repository.
 
-This project aims to explore how the Covid-19 pandemic has impacted the housing market by focusing on comparing the sales price across NYC. The project will track how the waves of Covid-19 cases affected the price fluctuations by conducting data analysis and illustrating the results.
+This project aims to explore how the Covid-19 pandemic has impacted the housing market by focusing on comparing the sales price across NYC. The project will track how the waves of Covid-19 cases affected the price fluctuations by conducting data analysis on quarterly tabular, spatial and text data, with illustrations.
 
 Research Questions:
 * How has Covid-19 affected the housing market via housing prices over time?
 * How has COVID-19 affected the NYC housing market? Are there any regional variations in the housing price fluctuations?
 * How has the overall perspective on Covid-19 changed over time?
+
+The website has been coded using `HTML`, `CSS`, and `JavaScript` from scratch to build a simple, yet user-friendly website.
 
 ## Part 1: Trends in Covid-19 and Sales Price
 
@@ -33,6 +35,3 @@ The final section studies the changes of perspective on Covid-19 over time (2020
 * Housing: [NYC Housing Sales Data](https://www1.nyc.gov/site/finance/taxes/property-annualized-sales-update.page)
 * Mapping: [Modified Zip Code Tabulation Areas (MODZCTA)](https://data.cityofnewyork.us/Health/Modified-Zip-Code-Tabulation-Areas-MODZCTA-/pri4-ifjk)
 * Text Analysis: [Tweets](https://github.com/QMSS-G5063-2022/Group_G_Covid_Housing_Prices/tree/main/Part3_data)
-
-Our process book that logs our work from start to end can be found [here](https://docs.google.com/document/d/1xeExYWJWVvAeyePif__lbE5q5tvxCoxBYs8WfAIuTLs/edit?usp=sharing)
-- Note: this can only be viewed by LionMail
